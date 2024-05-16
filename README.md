@@ -47,10 +47,19 @@ SQLite is used to store the next 5 expected dates and their forecasted values ac
 
 Usage
 
+Prerequisites
+
+Python (3.x recommended)
+Flask
+SQLite
+HTML/CSS/JavaScript knowledge for frontend customization
+
+Installation
+
 To run the system locally, follow these steps:
 
 1. Clone the repository.
-2. Install required dependencies (requirements.txt).
+2. Install Dependencies: Install all missing dependencies using pip.
 3. Open VS code  
 4. Run the Flask application (app.py) on Terminal.
 5. Access the system through a web browser.
