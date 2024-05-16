@@ -50,8 +50,11 @@ Usage
 Prerequisites
 
 Python (3.x recommended)
+
 Flask
+
 SQLite
+
 HTML/CSS/JavaScript knowledge for frontend customization
 
 Installation
