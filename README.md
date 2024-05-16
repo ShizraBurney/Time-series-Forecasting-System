@@ -49,13 +49,13 @@ Usage
 
 Prerequisites
 
-Python (3.x recommended)
+1. Python (3.x recommended)
 
-Flask
+2. Flask
 
-SQLite
+3. SQLite
 
-HTML/CSS/JavaScript knowledge for frontend customization
+4. HTML/CSS/JavaScript knowledge for frontend customization
 
 Installation
 
