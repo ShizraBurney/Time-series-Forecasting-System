@@ -1,0 +1,106 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    flex-basis: 48%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+/* Dropdown and button styles */
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Section heading styles */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Output div styles */
+.model-results {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders between rows and columns are merged */
+}
+
+th, td {
+    border: 1px solid black; /* Adds a border around each cell */
+    padding: 8px; /* Adds space around text in each cell */
+    text-align: left; /* Aligns text to the left */
+}
+
+thead {
+    background-color: #f2f2f2; /* Light grey background for the header */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9; /* Zebra stripes for rows */
+}

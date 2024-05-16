@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Series Forecasting System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Time Series Forecasting System</h1>
+    </header>
+
+    <main>
+        <section id="dataset-selection">
+            <h2>Select Dataset</h2>
+            <select id="dataset-dropdown">
+                <option value="finance">Finance Sector</option>
+                <option value="energy">Energy Sector</option>
+                <option value="environment">Environmental Sector</option>
+            </select>
+        </section>
+
+        <section id="model-selection">
+            <h2>Select Model</h2>
+            <select id="model-dropdown">
+                <option value="arima">ARIMA</option>
+                <option value="ann">ANN</option>
+                <option value="hybrid_arima_ann">Hybrid ARIMA-ANN</option>
+                <option value="sarima">SARIMA</option>
+                <option value="ets">ETS</option>
+                <option value="prophet">Prophet</option>
+                <option value="svr">SVR</option>
+                <option value="lstm">LSTM</option>
+            </select>
+        </section>
+
+        <section id="forecast-button">
+            <button onclick="generate_forecast()">Generate Forecast</button>
+        </section>
+
+        <section id="upload-data">
+            <h2>Upload New Data</h2>
+            <input type="file" id="data-file" accept=".csv">
+            <button onclick="handleUpload()">Upload Data</button>
+        </section>
+
+        <section id="forecast-results" class="model-results">
+            <h2>Forecasts</h2>
+            <table id="forecast-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Forecasted Log Close Values</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Forecast data will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="residuals-results" class="model-results">
+            <h2>Residuals</h2>
+            <div id="residuals-output"></div>
+        </section>
+
+        <section id="accuracy-results" class="model-results">
+            <h2>Accuracy Metrics</h2>
+            <div id="accuracy-output"></div>
+        </section>
+        
+        <section id="error-messages" class="model-results">
+            <h2>Error Messages</h2>
+            <div id="forecast-output"> <!-- This will display error messages from the server or JavaScript -->
+            </div>
+        </section>
+
+        <!-- Link to Dash app for interactive graphs -->
+        <iframe src="/dash/" width="100%" height="600"></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Time Series Forecasting System</p>
+    </footer>
+
+    <script src="static/index.js"></script>
+</body>
+</html>
