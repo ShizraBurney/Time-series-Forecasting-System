@@ -3,13 +3,13 @@ Forecasting System for Financial Data
 
 Overview
 
-This forecasting system utilizes monthly stock prices from the S&P 500 index to generate forecasts for the next period. It provides a user-friendly interface for selecting datasets, models, uploading data, and viewing forecast results, residuals, and accuracy metrics.
+This forecasting system  provides a user-friendly interface for selecting datasets, models, uploading data, and viewing forecast results, residuals, and accuracy metrics.” 
 
 
 
 Dataset Selection & Description
 
-The dataset comprises monthly stock prices from the S&P 500 index, offering comprehensive coverage across various industries and sectors. Monthly frequency strikes a balance between granularity and data volume, capturing meaningful trends while reducing noise compared to daily data.
+The dataset comprises monthly stock prices from the S&P 500 index, offering comprehensive coverage across various industries and sectors.“
 
 
 Frontend Development
